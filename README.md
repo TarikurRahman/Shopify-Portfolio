@@ -2,6 +2,23 @@
 
 A modern, responsive portfolio website for Tarikur Rahman, a Shopify expert developer and eCommerce consultant. The site presents Shopify development services, technical expertise, featured projects, client testimonials, and contact options in a polished single-page experience.
 
+<!-- Website Full Preview -->
+<div align="center">
+
+  ## 🖥️ Live Preview
+
+  <a href="https://shopifyportfolio.vercel.app/" target="_blank">
+    <img src="https://img.shields.io/badge/🚀_VISIT_LIVE_SITE-shopifyportfolio.vercel.app-00C7B7?style=for-the-badge&logo=vercel&logoColor=white" alt="Visit Live Site" />
+  </a>
+
+  <br /><br />
+
+  <a href="https://shopifyportfolio.vercel.app/" target="_blank">
+    <img src="https://github.com/user-attachments/assets/dc4cedb0-7478-4fbf-8c1a-66849b306c6d" alt="DEMON71 Website Preview" width="100%" />
+  </a>
+
+</div>
+
 ## Project Overview
 
 This project is built with Next.js and React to showcase professional Shopify and eCommerce development work. Visitors can explore:
