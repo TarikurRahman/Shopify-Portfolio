@@ -144,7 +144,7 @@ export default function Navbar() {
                       ? 'bg-primary/20 text-primary font-semibold'
                       : 'text-gray-300 hover:text-white hover:bg-white/5'
                   }`}
-                  style={{ animationDelay: `${idx * 0.05}s` }}
+                  style={{ animationDelay: `${(idx * 0.05).toFixed(2)}s` }}
                 >
                   {item}
                 </Link>

@@ -100,7 +100,7 @@ Make sure the following tools are installed:
 - **GitHub:** [github.com/tarikurrahman](https://github.com/tarikurrahman)
 - **Portfolio:** [yourtarikur.vercel.app](https://yourtarikur.vercel.app/)
 - **Social/Handle:** `tarikurrahman08`
-- **Email:** [tarikurrahman2008@gmail.com](mailto:tarikurrahman2008@gmail.com)
+- **Email:** [tarikurrahman92@gmail.com](mailto:tarikurrahman92@gmail.com)
 
 ## License
 

@@ -68,9 +68,9 @@ export default function Footer() {
             <h4 className="font-semibold text-white mb-4">My Network</h4>
             <ul className="space-y-2">
               {[
-                { name: 'nafij.com', href: 'https://nafij.com' },
-                { name: 'nafij.bro.bd', href: 'https://nafij.bro.bd' },
-                { name: 'nafij.pro.bd', href: 'https://nafij.pro.bd' },
+                { name: 'yourtarikur.vercel.app', href: 'https://yourtarikur.vercel.app' },
+                { name: 'mybio.bd/yourtarikur', href: 'https://mybio.bd/yourtarikur' },
+                { name: 'tarikurrahman.site.je', href: 'https://tarikurrahman.site.je/' },
               ].map((site) => (
                 <li key={site.name}>
                   <a
@@ -93,11 +93,11 @@ export default function Footer() {
               
               {/* Email */}
               <a
-                href="mailto:nafij.cms.2026@gmail.com"
+                href="mailto:tarikurrahman2008@gmail.com"
                 className="flex items-center space-x-2 text-gray-400 hover:text-primary transition-colors text-sm"
               >
                 <Mail size={16} />
-                <span>nafij.cms.2026@gmail.com</span>
+                <span>tarikurrahman2008@gmail.com</span>
               </a>
 
               {/* Social Links */}
@@ -105,7 +105,7 @@ export default function Footer() {
                 
                 {/* LinkedIn */}
                 <a
-                  href="https://www.linkedin.com/in/nafij-islam"
+                  href="https://www.linkedin.com/in/tarikurrahman"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-2 rounded-lg glass-effect hover:bg-primary/20 transition-all"
@@ -116,7 +116,7 @@ export default function Footer() {
 
                 {/* GitHub */}
                 <a
-                  href="https://github.com/nafij-islam"
+                  href="https://github.com/tarikurrahman"
                   target="_blank"
                   rel="noopener noreferrer me"
                   className="p-2 rounded-lg glass-effect hover:bg-primary/20 transition-all"
@@ -127,7 +127,7 @@ export default function Footer() {
 
                 {/* Facebook */}
                 <a
-                  href="https://www.facebook.com/nafijislam99/"
+                  href="https://www.facebook.com/tarikurrahman08"
                   target="_blank"
                   rel="noopener noreferrer me"
                   className="p-2 rounded-lg glass-effect hover:bg-primary/20 transition-all"
@@ -138,7 +138,7 @@ export default function Footer() {
 
                 {/* WhatsApp */}
                 <a
-                  href="https://wa.me/+8801633003462"
+                  href="https://wa.me/+8801819986598"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-2 rounded-lg glass-effect hover:bg-primary/20 transition-all"

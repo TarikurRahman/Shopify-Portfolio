@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import { ArrowRight, Sparkles } from 'lucide-react'
 import Image from 'next/image'
-import Nafij from '../../public/Nafij-islam.png'
+import Nafij from '../../public/Tarikur-Rahman.png'
 
 export default function Hero() {
   return (
@@ -25,7 +25,7 @@ export default function Hero() {
             <div className="inline-flex items-center space-x-2 px-4 py-2 rounded-full glass-effect w-fit">
               <Sparkles size={16} className="text-primary animate-spin" style={{ animationDuration: '3s' }} />
               <span className="text-sm text-gray-300">
-                Trusted by <span className="text-primary font-semibold">50+</span> eCommerce brands
+                Trusted by <span className="text-primary font-semibold">10+</span> eCommerce brands
               </span>
             </div>
 
@@ -43,13 +43,13 @@ export default function Hero() {
             {/* Stats */}
             <div className="grid grid-cols-3 gap-4">
               <div className="p-4 rounded-lg glass-effect">
-                <p className="text-3xl font-bold text-primary">50+</p>
+                <p className="text-3xl font-bold text-primary">10+</p>
                 <p className="text-sm text-gray-400">Projects Delivered</p>
               </div>
 
               <div className="p-4 rounded-lg glass-effect">
-                <p className="text-3xl font-bold text-primary">$5M+</p>
-                <p className="text-sm text-gray-400">GMV Increased</p>
+                <p className="text-3xl font-bold text-primary">2x</p>
+                <p className="text-sm text-gray-400">Conversion Rate</p>
               </div>
 
               <div className="p-4 rounded-lg glass-effect">

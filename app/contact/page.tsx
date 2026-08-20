@@ -14,6 +14,7 @@ export default function ContactPage() {
   })
   const [isSubmitted, setIsSubmitted] = useState(false)
   const [isLoading, setIsLoading] = useState(false)
+  const [submitError, setSubmitError] = useState('')
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target
@@ -23,16 +24,37 @@ export default function ContactPage() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsLoading(true)
+    setSubmitError('')
 
-    // Simulate form submission
-    setTimeout(() => {
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify({
+          access_key: '71c361c1-3ee9-4436-9ea5-b7aa8d9edb6b',
+          subject: 'New Shopify Portfolio Contact Message',
+          from_name: formData.name,
+          replyto: formData.email,
+          ...formData,
+        }),
+      })
+      const result = await response.json()
+
+      if (!response.ok || !result.success) {
+        throw new Error(result.message || 'Unable to send your message.')
+      }
+
       setIsLoading(false)
       setIsSubmitted(true)
       setFormData({ name: '', email: '', phone: '', message: '' })
-
-      // Reset message after 5 seconds
       setTimeout(() => setIsSubmitted(false), 5000)
-    }, 1000)
+    } catch (error) {
+      setIsLoading(false)
+      setSubmitError(error instanceof Error ? error.message : 'Unable to send your message. Please try again.')
+    }
   }
 
   return (
@@ -63,14 +85,14 @@ export default function ContactPage() {
               {
                 icon: Mail,
                 title: 'Email',
-                info: 'nafij.cms.2026@gmail.com',
+                info: 'tarikurrahman2008@gmail.com',
                 details: 'Response within 24 hours',
               },
               {
                 icon: Phone,
                 title: 'Phone',
-                info: '+8801633003462',
-                details: 'Available Mon-Fri 12AM-10PM EST',
+                info: '+880 1819-986598',
+                details: 'Available on WhatsApp & Calls',
               },
               {
                 icon: MapPin,
@@ -169,6 +191,8 @@ export default function ContactPage() {
                       placeholder="Tell me about your project and goals..."
                     />
                   </div>
+
+                  {submitError && <p className="text-sm text-red-400">{submitError}</p>}
 
                   <button
                     type="submit"

@@ -126,7 +126,10 @@ export default function Testimonials() {
                             key={i}
                             size={18}
                             className="fill-primary text-primary group-hover:animate-bounce"
-                            style={{ animationDelay: `${i * 0.1}s`, animationDuration: '0.6s' }}
+                            style={{
+                              animationDelay: `${(i * 0.1).toFixed(1)}s`,
+                              animationDuration: '0.6s',
+                            }}
                           />
                         ))}
                       </div>

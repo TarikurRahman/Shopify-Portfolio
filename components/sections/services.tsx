@@ -100,7 +100,14 @@ export default function Services() {
               <div className="space-y-3 mb-8">
                 {features.map((feature, idx) => (
                   <div key={idx} className="flex items-start space-x-3 stagger-child">
-                    <Check size={20} className="text-primary flex-shrink-0 mt-0.5 group-hover:animate-bounce" style={{ animationDelay: `${idx * 0.1}s`, animationDuration: '0.8s' }} />
+                    <Check
+                      size={20}
+                      className="text-primary flex-shrink-0 mt-0.5 group-hover:animate-bounce"
+                      style={{
+                        animationDelay: `${(idx * 0.1).toFixed(1)}s`,
+                        animationDuration: '0.8s',
+                      }}
+                    />
                     <span className="text-gray-300 text-sm smooth-transition">{feature}</span>
                   </div>
                 ))}
